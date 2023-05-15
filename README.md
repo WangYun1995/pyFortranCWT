@@ -69,4 +69,4 @@ $:source ~/.bashrc
 The above commands will yield ".pyd" files, which can be imported in Python. Then add ```...\...\pyFortranCWT``` to the PYTHONPATH. (see [How to add to the PYTHONPATH in Windows](https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-so-it-finds-my-modules-packages))
 
 ## Examples
-
+see [pyFortran_examples.ipynb](https://github.com/WangYun1995/pyFortranCWT/blob/main/pyFortranCWT_examples.ipynb) for examples.
