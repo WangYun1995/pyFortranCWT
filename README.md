@@ -55,7 +55,7 @@ $:source ~/.bashrc
 ```
 > git clone  https://github.com/WangYun1995/pyFortranCWT.git
 > cd pyFortranCWT\fftcwt
-> python -m numpy.f2py -c Parameters.f95 Tools.f95 FFTCWT.f95 -"I\...\fftw3\include" -L"\...\fftw3\lib" -lfftw3 --link-fftw3 --fcompiler=gnu95 --compiler=mingw32 --opt='-O3' -m fftcwt
+> python -m numpy.f2py -c Parameters.f95 Tools.f95 FFTCWT.f95 -I"\...\fftw3\include" -L"\...\fftw3\lib" -lfftw3 --link-fftw3 --fcompiler=gnu95 --compiler=mingw32 --opt='-O3' -m fftcwt
 > cd ..
 > cd v97cwt
 > python -m numpy.f2py -c Parameters.f95 Tools.f95 V97CWT.f95 --fcompiler=gnu95 --compiler=mingw32 --opt='-O3' -m v97cwt
