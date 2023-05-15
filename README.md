@@ -67,3 +67,6 @@ $:source ~/.bashrc
 > python -m numpy.f2py -c Parameters.f95 Tools.f95 A19CWT.f95 --fcompiler=gnu95 --compiler=mingw32 --opt='-O3' -m a19cwt
 ```
 The above commands will yield ".pyd" files, which can be imported in Python. Then add ```...\...\pyFortranCWT``` to the PYTHONPATH. (see [How to add to the PYTHONPATH in Windows](https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-so-it-finds-my-modules-packages))
+
+## Examples
+
