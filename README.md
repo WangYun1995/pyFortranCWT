@@ -34,16 +34,16 @@ archivePrefix = {arXiv},
 ```
 $:git clone  https://github.com/WangYun1995/pyFortranCWT.git
 $:cd pyFortranCWT/fftcwt
-$:python -m numpy.f2py -c Parameters.f95 Tools.f95 FFTCWT.f95 -I/.../fftw3/include -L/.../fftw3/lib -lfftw3 --link-fftw3 --fcompiler=gnu95 --opt='-O3' -m fftcwt
+$:python -m numpy.f2py -c Parameters.f95 Tools.f95 FFTCWT.f95 -I/.../fftw3/include -L/.../fftw3/lib -lfftw3 --link-fftw3 --fcompiler=gnu95 --compiler=unix --opt='-O3' -m fftcwt
 $:cd ..
 $:cd v97cwt
-$:python -m numpy.f2py -c Parameters.f95 Tools.f95 V97CWT.f95 --fcompiler=gnu95 --opt='-O3' -m v97cwt
+$:python -m numpy.f2py -c Parameters.f95 Tools.f95 V97CWT.f95 --fcompiler=gnu95 --compiler=unix --opt='-O3' -m v97cwt
 $:cd ..
 $:cd m02cwt
-$:python -m numpy.f2py -c Parameters.f95 Tools.f95 M02CWT.f95 --fcompiler=gnu95 --opt='-O3' -m m02cwt
+$:python -m numpy.f2py -c Parameters.f95 Tools.f95 M02CWT.f95 --fcompiler=gnu95 --compiler=unix --opt='-O3' -m m02cwt
 $:cd ..
 $:cd a19cwt
-$:python -m numpy.f2py -c Parameters.f95 Tools.f95 A19CWT.f95 --fcompiler=gnu95 --opt='-O3' -m a19cwt
+$:python -m numpy.f2py -c Parameters.f95 Tools.f95 A19CWT.f95 --fcompiler=gnu95 --compiler=unix --opt='-O3' -m a19cwt
 ```
 The above commands will yield ".so" files, which can be imported in Python. Then add ```export PYTHONPATH="${PYTHONPATH}:/.../.../pyFortranCWT/``` to your ```~/.bashrc``` and run the following commond
 
@@ -66,3 +66,4 @@ $:source ~/.bashrc
 > cd a19cwt
 > python -m numpy.f2py -c Parameters.f95 Tools.f95 A19CWT.f95 --fcompiler=gnu95 --compiler=mingw32 --opt='-O3' -m a19cwt
 ```
+The above commands will yield ".pyd" files, which can be imported in Python. Then add ```...\...\pyFortranCWT``` to the PYTHONPATH. (see [How to add to the PYTHONPATH in Windows](https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-so-it-finds-my-modules-packages))
