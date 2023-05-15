@@ -1,5 +1,5 @@
 # pyFortranCWT
-**A Python wrapper of the [FortranCWT](https://github.com/WangYun1995/FortranCWT) created with f2py**
+**Python wrappers of the [FortranCWT](https://github.com/WangYun1995/FortranCWT) codes created with f2py**
 
 If you use our codes or your research is related to our paper, please kindly cite the following paper, in which the fast CWT algorithms are reviewed and compared.
 
