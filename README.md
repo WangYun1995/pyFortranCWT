@@ -45,7 +45,7 @@ $:cd ..
 $:cd a19cwt
 $:python -m numpy.f2py -c Parameters.f95 Tools.f95 A19CWT.f95 --fcompiler=gnu95 --compiler=unix --opt='-O3' -m a19cwt
 ```
-The above commands will yield ".so" files, which can be imported in Python. Then add ```export PYTHONPATH="${PYTHONPATH}:/.../.../pyFortranCWT/``` to your ```~/.bashrc``` and run the following commond
+The above commands will yield ".so" files, which can be imported in Python. Then add ```export PYTHONPATH="${PYTHONPATH}:/.../.../pyFortranCWT/"``` to your ```~/.bashrc``` and run the following commond
 
 ```
 $:source ~/.bashrc
